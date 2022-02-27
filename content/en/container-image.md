@@ -1,11 +1,10 @@
 ---
-title: Container Image
+title: صورة الحاوية
 status: Feedback Appreciated
 category: concept
 ---
 
-A container image is an immutable, static file containing the dependencies for the creation of a container. These dependencies may include a single executable binary file, system libraries, system tools, environment variables, and other required platform settings. Container images result from an application's containerization and are typically stored in container registries, where they can be downloaded and run as an isolated process using a Container Runtime Interface (CRI). A container image framework must follow the standard schema defined by the Open Container Initiative (OCI).
+"صورة الحاوية" هي عبارة عن ملف ثابت وغير متغير، يحتوي على التبعيات أو المتطلبات اللازمة لبناء حاوية. تلك التبعيات أو المتطلبات قد تتكون من ملف تشغيل اساسي ، مكتبات النظام ، أدوات النظام ، متغيّرات بيئة التشغيل ، بالإضافة إلي إعدادات المنصّة الأخرى. "صور الحاويات" هي نتيجة لاستعمال مبدأ التحوية أو الاحتواء للبرمجيات، و يتم تخزين تلك الحاويات عادةً في سجلّ الحاويات، حيث يمكن تنزيلها و تشغيلها كعملية تشغيلية منعزلة عن غيرها باستخدام الواجهة التشغيليه للحاويات Container Runtime Interface ( CRI ) . الإطار التشغيلي لصورة الحاوية يجب أن يتّبع المخطط القياسي الذي تم تعريفهعن طريق المبادرة المفتوحة لتقنية الحاويات Open Container Initiative ( OCI ) .
 
-Traditionally, application servers are configured per environment, and applications are deployed to them. Any misconfiguration between environments is problematic and often leads to downtime or failed deployments. An application's environment needs to be repeatable and well-defined; otherwise, the chance of environment-related bugs increases. When application environments are underdefined or inaccurate, horizontal and vertical scaling of applications becomes challenging. 
-
-Container images bundle an application with any of its runtime dependencies, such as an application server. This provides consistency across all environments, including a developer's machine. Container images can be used to instantiate as many containers as needed, allowing for greater scalability. 
+عادةً، يتم ضبط خوادم التطبيقات أو إعدادها على حسب البيئة المطلوبة ، و يتمّ نشر أو تركيب التطبيقات على تلك الخوادم. يعتبر أي خطأ في التهيئة ما بين بيئات التطبيقات إشكالية و عادةً ما ينتج عنه توقف التطبيقات أو فشل نشرها وتركيبها. هناك حاجة لأن بيئة التطبيقات قابلة للتكرار و معرّفة جيدا ; عدا ذلك ، فإن احتمالية أن تكون هناك علل مرتبطة ببيئة التطبيقات ستكون مرتفعة. في حال كانت بيئة التطبيقات غير معرّفة جيداً أو غير دقيقة ، فإن التحجيم الأفقي و التحجيم العمودي للتطبيقات سيكون صعباً و يشكّل تحدّياً .
+"صور الحاويات" تجمع في داخلها التطبيقات و أي تبعيّات أو متطلّبات تشغيليّة،  كخادم التطبيق. يقدّم ذلك تناسقاً فيما بين جميع البيئات ، بما في ذلك جهاز المطوّر نفسه.  "صور الحاويات" يمكن استخدامها لإنشاء العدد المطلوب من المُثُل ، مما يعطي القدرة الأكبر للتحجيم .
